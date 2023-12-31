@@ -8,7 +8,8 @@ class Configuration
     :file_suffix,
     :region,
     :remote_path,
-    :repository
+    :repository,
+    :endpoint
 
   attr_reader :hooks
 
@@ -19,6 +20,7 @@ class Configuration
     bucket: '',
     file_suffix: '',
     region: '',
+    endpoint: nil,
     remote_path: '_backups/database/',
     repository: 'file system'
   )
@@ -30,6 +32,7 @@ class Configuration
     @region = region
     @remote_path = remote_path
     @repository = repository
+    @endpoint = endpoint
   end
 
   def hooks=(hooks)
