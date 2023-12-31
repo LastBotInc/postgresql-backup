@@ -12,7 +12,8 @@ module Tools
         provider: 'AWS',
         region: configuration.region,
         aws_access_key_id: configuration.aws_access_key_id,
-        aws_secret_access_key: configuration.aws_secret_access_key
+        aws_secret_access_key: configuration.aws_secret_access_key,
+        endpoint: configuration.endpoint
       )
     end
 
