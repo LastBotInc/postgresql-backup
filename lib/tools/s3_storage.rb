@@ -13,7 +13,8 @@ module Tools
         region: configuration.region,
         aws_access_key_id: configuration.aws_access_key_id,
         aws_secret_access_key: configuration.aws_secret_access_key,
-        endpoint: configuration.endpoint
+        endpoint: configuration.endpoint,
+        enable_signature_v4_streaming: false
       )
     end
 
